@@ -7,6 +7,10 @@ import android.content.SharedPreferences;
  * Created by nima519 on 2016/1/2.
  */
 public class SPUtils {
+
+    private Context mContext;
+    private SharedPreferences sp = null;
+
     /**
      * 保存键值对
      *

@@ -57,16 +57,18 @@
             android:background="@drawable/shape_left_radius_color_square"
             android:gravity="center"
             android:text="用户名"
+            android:drawableLeft="@mipmap/user_account"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
-        <EditText
+        <com.nima519.view.DeleteableEditText
             android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_weight="1"
             android:background="#5092F5"
             android:inputType="text"
+            android:hint="请输入用户名"
             android:lines="2"
             android:paddingLeft="12.0dp"
             android:textSize="14sp"
@@ -89,10 +91,11 @@
             android:background="@drawable/shape_left_radius_color_square"
             android:gravity="center"
             android:text="密码"
+            android:drawableLeft="@mipmap/user_password"
             android:textColor="#FFFFFF"
             android:textSize="16sp" />
 
-        <EditText
+        <com.nima519.view.DeleteableEditText
             android:id="@+id/et_password"
             android:layout_width="match_parent"
             android:layout_height="40dp"
@@ -100,6 +103,7 @@
             android:background="#5092F5"
             android:inputType="textPassword"
             android:lines="2"
+            android:hint="请输入密码"
             android:paddingLeft="12.0dp"
             android:textSize="14sp"
             android:typeface="monospace" />
@@ -117,7 +121,7 @@
             android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="45dp"
-            android:background="@drawable/shape_radius_color_square"
+            android:background="#5092F5"
             android:onClick="true"
             android:text="登陆"
             android:textColor="#FFFFFF"
