@@ -35,4 +35,7 @@ public class User extends BmobChatUser {
     public void setSignature(String signature) {
         this.signature = signature;
     }
+    public  void hello(){
+        
+    }
 }
