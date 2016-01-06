@@ -36,6 +36,6 @@ public class User extends BmobChatUser {
         this.signature = signature;
     }
     public  void hello(){
-        
+
     }
 }

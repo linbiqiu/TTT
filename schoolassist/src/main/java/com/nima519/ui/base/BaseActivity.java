@@ -16,11 +16,43 @@ public class BaseActivity extends Activity {
     protected SPUtils spUtils;
     protected Resources mResources;
     protected Context mContext;
+
+    /**
+     *activity.findViewById()
+     * @param context
+     * @param id
+     * @param <T>
+     * @return
+     */
+    public static  <T extends View>  T $(Activity context,int id){
+        return (T)context.findViewById(id);
+    }
+
+    /**
+     * rootView.findViewById()
+     * @param rootView
+     * @param id
+     * @return
+     */
+    public static <T extends View> T f(View rootView, int id) {
+        return (T) rootView.findViewById(id);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         TAG = getClass().getSimpleName();
         initConfig();
+        initView();
+        setListenr();
+    }
+
+    protected void initView(){
+
+    }
+
+    protected  void setListenr(){
+
     }
 
     private void initConfig() {
@@ -45,26 +77,5 @@ public class BaseActivity extends Activity {
             intent.putExtras(bundle);
         }
         startActivity(intent);
-    }
-
-    /**
-     *activity.findViewById()
-     * @param context
-     * @param id
-     * @param <T>
-     * @return
-     */
-    public static  <T extends View>  T $(Activity context,int id){
-        return (T)context.findViewById(id);
-    }
-
-    /**
-     * rootView.findViewById()
-     * @param rootView
-     * @param id
-     * @return
-     */
-    public static <T extends View> T f(View rootView, int id) {
-        return (T) rootView.findViewById(id);
     }
 }

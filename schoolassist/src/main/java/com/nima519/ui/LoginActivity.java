@@ -18,4 +18,14 @@ public class LoginActivity extends BaseActivity {
         Bmob.initialize(this, Content.ApplicationID);
         L.i(TAG,TAG+"has launched !!!!!");
     }
+
+    @Override
+    protected void initView() {
+        super.initView();
+    }
+
+    @Override
+    protected void setListenr() {
+        super.setListenr();
+    }
 }
